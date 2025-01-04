@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<body>
+
+    <!-- Main Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <ul class="link-group">
+                <li class="link active"><a href="#">home</a></li>
+                <li class="link"><a href="#">projects</a></li>
+                <li class="link"><a href="#">about</a></li>
+                <li class="link"><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <main>
+        <section class="home-section active">
+            <h1 class="home-heading">System.out.println("Hello World");</h1>
+            <img src="images/home.jpg" class="home-img" alt="Image representing home">
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section active">
+            <div class="about">
+                <div class="about-img-container">
+                    <img src="img/home.png" class="about-img" alt="Image representing about">
+                    <button class="download-cv-btn">Download CV</button>
+                </div>
+                <p class="about-info">Lorem ipsum...</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="project-section active">
+            <h1 class="project-heading">Projects</h1>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="img/project-1.png" class="project-img" alt="Project 1">
+                    <div class="project-content">
+                        <h2 class="project-title">Project 01</h2>
+                        <p class="project-info">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="project-btn-grp">
+                            <button class="project-btn github">GitHub Repo</button>
+                            <button class="project-btn live">See Live</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/project-2.png" class="project-img" alt="Project 2">
+                    <div class="project-content">
+                        <h2 class="project-title">Project 02</h2>
+                        <p class="project-info">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="project-btn-grp">
+                            <button class="project-btn github">GitHub Repo</button>
+                            <button class="project-btn live">See Live</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/project-3.png" class="project-img" alt="Project 3">
+                    <div class="project-content">
+                        <h2 class="project-title">Project 03</h2>
+                        <p class="project-info">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="project-btn-grp">
+                            <button class="project-btn github">GitHub Repo</button>
+                            <button class="project-btn live">See Live</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skill-section active">
+            <h1 class="heading">Skills</h1>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="img/html.png" class="skill-img" alt="HTML">
+                    <div class="skill-level">98%</div>
+                    <h2 class="skill-name">HTML</h2>
+                    <p class="skill-info">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/html.png" class="skill-img" alt="CSS">
+                    <div class="skill-level">90%</div>
+                    <h2 class="skill-name">CSS</h2>
+                    <p class="skill-info">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/html.png" class="skill-img" alt="JavaScript">
+                    <div class="skill-level">75%</div>
+                    <h2 class="skill-name">JavaScript</h2>
+                    <p class="skill-info">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/html.png" class="skill-img" alt="React">
+                    <div class="skill-level">70%</div>
+                    <h2 class="skill-name">React</h2>
+                    <p class="skill-info">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section (Education and Experience) -->
+        <section class="timeline">
+            <h1 class="heading">Education and Experience</h1>
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">2000-2002</h2>
+                    <p class="card-detail">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">2000-2002</h2>
+                    <p class="card-detail">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">2000-2002</h2>
+                    <p class="card-detail">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">2000-2002</h2>
+                    <p class="card-detail">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section active">
+            <h1 class="heading">Contact Me</h1>
+            <form class="contact-form" method="POST" action="submit-form.php">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" autocomplete="off" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" autocomplete="off" placeholder="Your Email" required>
+
+                <label for="msg">Message:</label>
+                <textarea name="msg" id="msg" placeholder="Your Message" autocomplete="off" required></textarea>
+
+                <button type="submit" class="form-submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
