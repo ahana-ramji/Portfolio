@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100vw !important;
 }
 
 body{
@@ -122,7 +123,7 @@ a:hover{
 
 .home-heading{
     color: #720c7b;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 300;
     font-family: "Press Start 2P", monospace;
     font-style: normal;
@@ -134,16 +135,13 @@ a:hover{
     cursor .10s step-end infinite;
 }
 
-/* cursor blinking */
 @keyframes cursor{
     50% { border-color: transparent;}
 }
 
-/* typing effect */
 @keyframes typing {
     from{width: 0 }
 }
-
 
 .home-img {
     position: absolute;
@@ -177,7 +175,6 @@ a:hover{
     gap: 20px;
     margin-top: 5vh;
 }
-
 
 .home-buttons button,
 .home-buttons .home-link {
@@ -240,7 +237,6 @@ a:hover{
     cursor: pointer;
 }
 
-
 #home,
 #projects,
 #about,
@@ -250,7 +246,7 @@ a:hover{
     z-index: 8;
 
 }
-/* General About Section Styles */
+
 #about {
     width: 100%;
     min-height: 100vh;
@@ -261,7 +257,6 @@ a:hover{
     align-items: center;
 }
 
-/* About Items (Stacked Layout) */
 .about-item {
     width: 100%;
     max-width: 800px;
@@ -279,7 +274,6 @@ a:hover{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-/* About Titles */
 .about-title {
     font-size: 30px;
     margin-bottom: 20px;
@@ -288,7 +282,6 @@ a:hover{
     text-align: center;
 }
 
-/* Education and Experience Info */
 .about-info {
     padding: 16px;
     font-size: 16px;
@@ -310,7 +303,6 @@ a:hover{
     font-weight: bold;
 }
 
-/* Education and Experience Group Layout */
 .education-group, .experience-group {
     display: flex;
     flex-direction: column;
@@ -321,7 +313,6 @@ a:hover{
     margin-bottom: 20px;
 }
 
-/* Duration and Strong Styling */
 .experience-duration {
     font-size: 16px;
     color: #ff7db9;
@@ -355,14 +346,16 @@ a:hover{
 }
 
 .project-container{
-    display: flex;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Makes it responsive */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .project-card{
     height: 600px;
-    position: relative;
     background-color: #720c7b;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -370,7 +363,7 @@ a:hover{
 }
 
 .project-content{
-    position: relative;
+    font-size: 20px;
     padding: 40px;
     color: #fff;
     opacity: 1;
@@ -474,8 +467,6 @@ a:hover{
     resize:both;
     font-family: "Fira Code", monospace;
 }
-
-
 
 .form-submit-btn{
     background:  blueviolet;
