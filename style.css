@@ -24,7 +24,10 @@ a, .btn{
 }
 
 section{
-    padding: 180px 150px;
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
 }
 
 #desktop-nav{
@@ -56,6 +59,12 @@ nav{
     gap: 2rem;
     list-style: none;
 }
+
+
+.nav-links.open {
+    display: flex;
+}
+
 
 a{
     color: blueviolet;
@@ -111,14 +120,54 @@ a:hover{
     opacity: 1;
 }
 
-#home{
+.home{
+    
     width: 100%;
-    height: 100vh;
+    max-width: 1200px;
+    min-height: 100vh;
     padding: 180px 150px;
+    color: #fff;
     display: flex;
-    flex-direction:column;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.home .home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.home img{
+    width: 30vw;
+    height: auto;
+    border-radius: 50%;
+    object-fit: scale-down;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0 ,0.5);
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     align-items: flex-start;
-    position:relative;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 50%;
+}
+
+.home-body{
+    font-size: 2rem;
+    font-weight: 500;
+    opacity: 0.8;
+    color: rgb(208, 139, 194);
 }
 
 .home-heading{
@@ -127,24 +176,23 @@ a:hover{
     font-weight: 300;
     font-family: "Press Start 2P", monospace;
     font-style: normal;
-    border-right: 5px solid white;
-    width: 74%;
-    white-space: nowrap;
+    /* border-right: 5px solid white; */
+    /* width: 74%; */
+    /* white-space: nowrap;
     overflow: hidden;
     animation: typing 2s steps(18),
-    cursor .10s step-end infinite;
+    cursor .10s step-end infinite; */
 }
 
-@keyframes cursor{
+/* @keyframes cursor{
     50% { border-color: transparent;}
 }
 
 @keyframes typing {
     from{width: 0 }
-}
+} */
 
 .home-img {
-    position: absolute;
     top: 50%;
     right: 8%;
     transform: translateY(-50%); 
@@ -347,15 +395,17 @@ a:hover{
 
 .project-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Makes it responsive */
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 20px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    
 }
 
 .project-card{
-    height: 600px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-grow: 1;
     background-color: #720c7b;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -363,14 +413,16 @@ a:hover{
 }
 
 .project-content{
-    font-size: 20px;
+    font-size: 15px;
     padding: 40px;
     color: #fff;
     opacity: 1;
+    align-items: center;
+
 }
 
 .project-title{
-    font-size: 40px;
+    font-size: 35px;
     text-transform: capitalize;
     font-family: "Fira Code", serif;
     text-align: center;
@@ -379,33 +431,26 @@ a:hover{
 
 .project-info{
     margin: 20px;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 30px;
     text-align: center;
 }
 
-.project-btn-grp{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+.project-icons{
+    display: flex;
+    transition: transform 0.3s ease;
+    justify-content: center;
+    gap: 20px;
 }
 
-.project-btn{
-    height: 40px;
-    text-transform: capitalize;
-    font-size: 18px;
-    border-radius: 5px;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.project-icons{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-btn.live{
-    background: none;
-    border: 2px solid #fff;
+.project-icons img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(34, 46, 46, 0.7);
 }
-
 
 .project-card:hover {
     transform: translateY(-10px);

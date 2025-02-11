@@ -39,27 +39,33 @@
         </div>
     </nav>
 
-        <!-- Home Section -->
-        <section id="home">
-            <h1 class="home-heading">print("Hello World")</h1>
-            <h4 class="home-content"> 
-                <span class="highlight">I'm Alana, <br></span> a student at Iowa State University with <br> a passion for technology.</h4>
-            <img src="images/home.jpg" class="home-img" alt="Image of a person coding">
-        
-        <div class="home-buttons">
-            <button id="resume-btn">Resume</button>
-            <a href="https://www.linkedin.com/in/ahana-ramji/"target="_blank" class="home-link">LinkedIn</a>
-            <a href="https://www.github.com/ahana-ramji/"target="_blank" class="home-link">GitHub</a>
-        </div>
-        <div id="email-popup"class="popup hidden">
-            <div class="popup content">
-                    <h4>Enter your email</h4>
-                    <input type="email" id="email-input" placeholder="Enter your email"required>
-                    <button id="submit-email">Submit</button>
-                    <button id="cancel-popup">Cancel</button>
+
+    <section id="home" class="home">
+        <div class="home-container">
+            <div class="info-box">
+                
+                    <h2 class="home-heading">print("Hello World")</h2>
+                    <div class="text">
+                    <span class="highlight">I'm Ahana,</span> 
+                    <span class="home-body">a student at Iowa State University with a passion for technology.</span>
+                </div>
+                <img src="images/home.jpg" alt="Image of a girl coding">
+
+                <div class="home-buttons">
+                    <button id="resume-btn">Resume</button>
+                    <a href="https://www.linkedin.com/in//"target="_blank" class="home-link">LinkedIn</a>
+                    <a href="https://www.github.com//"target="_blank" class="home-link">GitHub</a>
+                </div>
+                
+                <div id="email-popup"class="popup hidden">
+                    <div class="popup content">
+                            <h4>Enter your email</h4>
+                            <input type="email" id="email-input" placeholder="Enter your email"required>
+                            <button id="submit-email">Submit</button>
+                            <button id="cancel-popup">Cancel</button>
+                    </div>
             </div>
-        </div>
-    </section>
+        </div></section>
 
         <!-- About Section -->         
         <section id="about">
@@ -110,14 +116,29 @@
             <div class="project-container">
                 <div class="project-card">
                     <div class="project-content">
+                        <h2 class="project-title">ReadIT: Book List Manager</h2>
+                        <p class="project-info">
+                            I am developing a dynamic web application using React and JavaScript to manage a personal book collection. Users can organize books into "To Be Read" and "Read" lists, with features like search functionality and a favorite system to improve interaction.
+                        </p>
+                        <div class="project-icons">
+                            <img src="images/html.png"width="48" height="48"  alt="">
+                            <img src="images/css-3.png"width="48" height="48" alt="">
+                            <img src="images/icons8-javascript-48.png" alt="">
+                            <img src="images/react.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
                         <h2 class="project-title">Portfolio Website</h2>
                         <p class="project-info">
                             I created this responsive website using HTML5, CSS3, and JavaScript to showcase web development
                             skills while highlighting my projects and experience.                        </p>
-                        <!-- <div class="project-btn-grp">
-                            <button class="project-btn github">GitHub Repo</button>
-                            <button class="project-btn live">See Live</button>
-                        </div> -->
+                            <div class="project-icons">
+                                <img src="images/html.png"width="48" height="48"  alt="">
+                                <img src="images/css-3.png"width="48" height="48" alt="">
+                                <img src="images/icons8-javascript-48.png" alt="">
+                            </div>
                     </div>
                 </div>
                 <div class="project-card">
@@ -127,10 +148,10 @@
                             Created a machine learning model to predict the occurence of breast cancer in patients. Implemented 
                             image classification and computed performance metrics to assess detection efficacy.
                         </p>
-                        <!-- <div class="project-btn-grp">
-                            <button class="project-btn github">GitHub Repo</button>
-                            <button class="project-btn live">See Live</button>
-                        </div> -->
+                        <div class="project-icons">
+                            <img src="images/python.png" width="48" height="48" alt="">
+                            <img src="images/machine-learning.png" width="48" height="48">
+                        </div>
                     </div>
                 </div>
                 <div class="project-card">
@@ -139,12 +160,13 @@
                         <p class="project-info">
                             Collaborated on a team project to create a unit converter with a SQL backend and a Python frontend.
                         </p>
-                        <!-- <div class="project-btn-grp">
-                            <button class="project-btn github"></button>
-                            <button class="project-btn live"></button>
-                        </div> -->
+                        <div class="project-icons">
+                            <img src="images/sql-server.png"width="48" height="48" alt="">
+                            <img src="images/python.png"width="48" height="48" alt="">
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </section>
 
