@@ -121,16 +121,14 @@ a:hover{
 }
 
 .home{
-    
     width: 100%;
-    max-width: 1200px;
     min-height: 100vh;
-    padding: 180px 150px;
+    padding: 150px 100px 100px;
+    position: relative;
+    top: 0;
     color: #fff;
     display: flex;
-    margin: 0 auto;
-    flex-direction: row;
-    align-items: center;
+    margin:auto;
 }
 
 
@@ -138,13 +136,14 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 150px 100px;
     justify-content: center;
     gap: 2rem;
     width: 100%;
 }
 
 .home img{
-    width: 30vw;
+    width: 20vw;
     height: auto;
     border-radius: 50%;
     object-fit: scale-down;
@@ -157,7 +156,6 @@ a:hover{
     display: flex;
     flex-direction: column;
     text-align: left;
-    align-items: flex-start;
     justify-content: center;
     gap: 1.5rem;
     max-width: 50%;
@@ -176,6 +174,7 @@ a:hover{
     font-weight: 300;
     font-family: "Press Start 2P", monospace;
     font-style: normal;
+    margin-top: 0;
     /* border-right: 5px solid white; */
     /* width: 74%; */
     /* white-space: nowrap;
@@ -296,22 +295,27 @@ a:hover{
 }
 
 #about {
-    width: 100%;
-    min-height: 100vh;
-    padding: 180px 150px;
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 150px 100px 100px;
+    position: relative;
+    top: 0;
 }
 
 .about-item {
     width: 100%;
-    max-width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     margin-bottom: 20px;
     margin-top: 30px;
+    padding: 10px 20px;
     background-color: #1d1d1d;
-    padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -323,7 +327,7 @@ a:hover{
 }
 
 .about-title {
-    font-size: 30px;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     color: #ff7db9;
     font-weight: 600;
@@ -331,7 +335,7 @@ a:hover{
 }
 
 .about-info {
-    padding: 16px;
+    padding: 10px 5px;
     font-size: 16px;
     line-height: 1.6;
     color: #f9f9f9;
@@ -345,7 +349,7 @@ a:hover{
 }
 
 .about-info li:before {
-    position: absolute;
+    position: relative;
     left: 0;
     color: #ff7db9;
     font-weight: bold;
@@ -354,6 +358,7 @@ a:hover{
 .education-group, .experience-group {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     gap: 20px;
 }
 
