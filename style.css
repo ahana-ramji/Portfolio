@@ -301,7 +301,7 @@ a:hover{
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    padding: 150px 100px 100px;
+    padding: 200px 200px 100px;
     position: relative;
     top: 0;
 }
@@ -314,7 +314,7 @@ a:hover{
     flex-grow: 1;
     margin-bottom: 20px;
     margin-top: 30px;
-    padding: 10px 20px;
+    padding: 20px 20px;
     background-color: #1d1d1d;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -327,7 +327,7 @@ a:hover{
 }
 
 .about-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     color: #ff7db9;
     font-weight: 600;
@@ -364,6 +364,7 @@ a:hover{
 
 .education-item, .experience-item {
     margin-bottom: 20px;
+    padding: 2rem;
 }
 
 .experience-duration {
