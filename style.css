@@ -7,8 +7,7 @@
 
 body{
     width :100%;
-    max-width: 1400px;
-    display: block;
+    max-width: none;
     margin: auto;
     min-height: 100vh;
     background: #191919;
@@ -25,7 +24,7 @@ a, .btn{
 
 section{
     min-height: 100vh;
-    padding: 8rem 12%;
+    padding: 8rem 8vw;
     width: 100%;
     position: relative;
 }
@@ -39,7 +38,7 @@ section{
     justify-content: center;
     align-items: center;
     z-index: 9;
-    background: #1a1a1a;
+    background: #191919;
     font-family: "Fira Code", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -52,7 +51,7 @@ nav, .nav-links{
 nav{
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 8vh;
 }
 
 .nav-links{
@@ -123,12 +122,12 @@ a:hover{
 .home{
     width: 100%;
     min-height: 100vh;
-    padding: 50px 50px 50px;
-    position: relative;
-    top: 0;
-    color: #fff;
+    padding: 10vh 5vw;
     display: flex;
-    margin:auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
 
 
@@ -136,14 +135,15 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 100px;
+    padding: 0;
     justify-content: center;
     gap: 2rem;
     width: 100%;
+    max-width: 900px;
 }
 
 .home img{
-    width: 20vw;
+    width:  clamp(150px, 25vw, 250px);
     height: auto;
     border-radius: 50%;
     object-fit: scale-down;
@@ -301,7 +301,7 @@ a:hover{
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    padding: 200px 200px 100px;
+    padding: 10vh 8vw;
     position: relative;
     top: 0;
 }
